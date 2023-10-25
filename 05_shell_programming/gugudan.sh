@@ -1,3 +1,4 @@
+# 구구단 출력
 #!/bin/bash
 if [ -z $* ]
 then

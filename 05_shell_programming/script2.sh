@@ -1,3 +1,4 @@
+# 좌석예약 스크립트
 #!/bin/bash
 filename="seats.txt"
 newfilename="newseats.txt"
