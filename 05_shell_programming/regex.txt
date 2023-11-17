@@ -1,0 +1,29 @@
+확장자
+\w+\.(jpg|png|gif)$
+이메일
+"/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/"
+집전화번호
+"/^(070|02|031|032|033|041|042|043|051|052|053|054|055|061|062|063|064)-\d{3,4}-\d{4}$/u"
+휴대폰번호
+"/^(010|011|016|017|018|019)-\d{3,4}-\d{4}$/u"
+우편번호
+"/^\d{3}-?\d{3}$/u"
+아이디
+"/^[a-zA-Z]\w{2,7}$/u"
+주민등록번호
+"/^\d{2}[0-1]\d[0-3]\d-?[1-6]\d{6}$/u"
+태그 제거(HTML)
+iframe 제거
+$STRING=preg_replace("!<iframe(.*?)<\/iframe>!is","",$STRING);
+&nbsp; 제거
+$STRING=str_replace("&nbsp;"," ",$STRING);
+복수 공백 하나로
+$STRING=preg_replace("/\s{2,}/"," ",$STRING)
+style= 제거
+$STRING=preg_replace("/ style=([^\"\']+) /"," ",$STRING); // style=border:0...
+style="" 제거
+$STRING=preg_replace("/ style=(\"|\')?([^\"\']+)(\"|\')?/","",$STRING); // style="border:0..."
+width= 제거
+$STRING=preg_replace("/ width=(\"|\')?\d+(\"|\')?/","",$STRING);
+height= 제거
+$STRING=preg_replace("/ height=(\"|\')?\d+(\"|\')?/","",$STRING);
