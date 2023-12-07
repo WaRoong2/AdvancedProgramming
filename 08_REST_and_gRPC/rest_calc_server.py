@@ -12,26 +12,28 @@ class HelloWorld(Resource):
     
 @api.route("/add")
 class Add(Resource):
-    # request_data = request.json
-    # print(request_data)
     def post(self):
-        return {"result":"" }
+        request_data = request.json
+        return {"result":request_data["x1"] + request_data["x2"]}
 
 @api.route("/substract")
 class Substract(Resource):
     def post(self):
-        return {"result":"%d"  }
+        request_data = request.json
+        return {"result":request_data["x1"] - request_data["x2"]  }
 
 @api.route("/multiply")
 class Multiply(Resource):
     def put(self):
-        return {"result":"%d"  }
+        request_data = request.json
+        return {"result":request_data["x1"] * request_data["x2"]  }
 
 @api.route("/divide")
 class Divide(Resource):
     def put(self):
-        return {"result":"%d"  }
+        request_data = request.json
+        return {"result":request_data["x1"] / request_data["x2"]  }
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="127.0.0.1", port=8080)
+    app.run(debug=True, host="0.0.0.0", port=5000)
