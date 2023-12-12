@@ -1,13 +1,24 @@
 syntax = "proto3";
 
-service Greeter {
-  rpc SayHello (HelloRequest) returns (HelloReply);
-}
-
 message HelloRequest {
   string name = 1;
 }
 
 message HelloReply {
   string message = 1;
+}
+
+message Operands {
+  float x1 = 1;
+  float x2 = 2;
+  string op = 3;
+}
+
+message CalcResult {
+  float result = 1;
+}
+
+service Calculator {
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc Calc (Operands) returns (CalcResult);
 }
