@@ -11,7 +11,7 @@
 
 과제2는 REST Api, gRPC, 그리고 DB를 결합해 자유주제로 간단한 백엔드 구현을 하는 것이었습니다.
 
-저는 과제2의 주제로 "ChatGPT를 활용한 타로"를 선정하여 회원가입/로그인, 카드뽑기, 타로해석, 결과저장, 결과조회 등의 기능을 가진 간단한 프로그램을 구현해보았습니다.
+저는 과제2의 주제로 "ChatGPT를 활용한 타로"를 선정하여 회원가입/로그인, 카드뽑기, 타로해석, 결과저장, 결과조회 등의 기능을 가진 간단한 프로그램을 구현해보았습니다. 사용된 기술 스택은 NodeJS express, gRPC (with Python), MongoDB 입니다.
 
 &nbsp;
 
@@ -26,4 +26,4 @@ Task 1 is to create a shell program that performs file integrity checks using Li
 
 Task 2 was to combine REST Api, gRPC, and DB for a simple backend implementation on a free topic.
 
-I selected "Tarot using ChatGPT" as the topic of Task 2 and implemented a simple program with functions such as sign-up/login, card drawing, tarot interpretation, saving results, and checking results, etc.
+I selected "Tarot using ChatGPT" as the topic of Task 2 and implemented a simple program with functions such as sign-up/login, card drawing, tarot interpretation, saving results, and checking results, etc. The technology stacks used are NodeJS express, gRPC (with Python), and MongoDB.
